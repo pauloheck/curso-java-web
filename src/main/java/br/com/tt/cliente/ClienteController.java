@@ -20,7 +20,7 @@ public class ClienteController {
 
 	@GetMapping
 	ModelAndView cliente() {
-		ModelAndView mv = new ModelAndView("cliente/cliente.html");
+		ModelAndView mv = new ModelAndView("cliente/index");
 		mv.addObject("clientes", service.consulta());
 		mv.addObject("cpf", "11111111111");
 		return mv;
